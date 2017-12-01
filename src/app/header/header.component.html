@@ -1,8 +1,13 @@
 <div>
+  <mat-toolbar>
+      <span>Title</span>
+  </mat-toolbar>
 <img src="assets\logo-nav.png">
-<nav>
-  <a routerLink="/admin">Admin</a>
-  <a routerLink="/machines">Machines</a>
-  <a routerLink="/parts">Parts</a>
-</nav>
+
+<mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item>Admin</button>
+    <button mat-menu-item>Machines</button>
+    <button mat-menu-item>Parts</button>
+</mat-menu>
+
 </div>
